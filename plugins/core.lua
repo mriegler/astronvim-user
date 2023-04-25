@@ -20,6 +20,18 @@ return {
       return opts
     end,
   },
+  {
+    "mfussenegger/nvim-jdtls", -- load jdtls on module
+    -- init = function()
+    --   vim.api.nvim_create_autocmd("Filetype", {
+    --     pattern = "java", -- autocmd to start jdtls
+    --     callback = function(opts)
+    --       if opts.root_dir and opts.root_dir ~= "" then
+    --         require("jdtls").start_or_attach(require("astronvim.utils.lsp").config "jdtls")
+    --       end
+    --     end,
+    --   })
+  }
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   --
