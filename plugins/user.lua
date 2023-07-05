@@ -9,4 +9,13 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "unblevable/quick-scope",
+    lazy = false,
+    init = function()
+      vim.g.qs_max_chars = 200
+      vim.g.qs_lazy_highlight = 1
+      vim.g.qs_highlight_on_keys = { 'f', 'F', 't', 'T' }
+    end
+  }
 }
